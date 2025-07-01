@@ -1,5 +1,11 @@
 version: '3.4'
 services:
+  nebula-graph-studio:
+    image: docker.io/vesoft/nebula-graph-studio:v3.8.0
+    environment:
+      USER: root
+    ports:
+      - 7001:7001
   metad0:
     image: docker.io/vesoft/nebula-metad:v3.8.0
     environment:
