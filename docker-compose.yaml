@@ -2,6 +2,7 @@ version: '3.4'
 services:
   nebula-graph-studio:
     image: docker.io/vesoft/nebula-graph-studio:v3.8.0
+    restart: on-failure
     environment:
       USER: root
     ports:
